@@ -1,25 +1,42 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router'
-import axios from 'axios'
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+import axios from 'axios';
+export default {
+  components: {
+    AppHeader,
+    AppFooter,
+    RouterView
+  }
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <AppHeader>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  </AppHeader>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <RouterView>
 
-  <RouterView />
+  </RouterView>
+
+  <AppFooter>
+
+  </AppFooter>
 </template>
 
-<style>
-
+<style lang="sass">
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html
+  font-size: 10px
+  scroll-behavior: smooth
+body
+  font-family: 'Montserrat', sans-serif
+  font-size: 1.6rem
+  font-weight: 400
+  overflow-x: hidden
 </style>
