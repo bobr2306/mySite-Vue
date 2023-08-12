@@ -22,7 +22,6 @@ header
     background: url(../assets/header-bg.jpg) center / cover no-repeat
     height: 100vh
     width: 100vw
-    position: sticky
     top: 0
 .nav
     background-color: #d9d9d9
