@@ -1,14 +1,37 @@
 <script>
-
+export default {
+    methods: {
+        goAbout() {
+            this.$router.push({
+                name: 'about'
+            })
+        },
+        goProjects() {
+            this.$router.push({
+                name: 'projects'
+            })
+        },
+        goPhotos() {
+            this.$router.push({
+                name: 'photos'
+            })
+        },
+        goLinks() {
+            this.$router.push({
+                name: 'links'
+            })
+        }
+    }
+}
 </script>
 
 <template>
     <header class="header">
         <div class="nav">
-            <a href="#about" class="nav-item">About me</a>
-            <a href="#specs" class="nav-item">My projects</a>
-            <a href="#" class="nav-item">My photos</a>
-            <a href="#" class="nav-item">Links</a>
+            <a @click="goAbout" href="#" class="nav-item">About me</a>
+            <a @click="goProjects" href="#" class="nav-item">My projects</a>
+            <a @click="goPhotos" href="#" class="nav-item">My photos</a>
+            <a @click="goLinks" href="#" class="nav-item">Links</a>
         </div>
         <h1 class="title-header">
             <span class="title-header__main">Konst</span>
