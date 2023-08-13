@@ -42,7 +42,7 @@
             list-style: none
             display: flex
             justify-content: center
-            gap: 3rem
+            gap: 5rem
         &__link
             &:link, &:visited
                 text-decoration: none

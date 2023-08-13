@@ -8,6 +8,14 @@ export default {
     AppHeader,
     RouterView,
     AppFooter
+  },
+  methods: {
+    scrollHeader() {
+      
+    }
+  },
+  mounted() {
+
   }
 }
 </script>
@@ -17,9 +25,9 @@ export default {
 
   </AppHeader>
 
-  <RouterView>
+  <router-view>
 
-  </RouterView>
+  </router-view>
 
   <AppFooter>
 

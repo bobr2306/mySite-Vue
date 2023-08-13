@@ -28,16 +28,16 @@ export default {
 <template>
     <header class="header">
         <nav class="nav">
-            <a @click="goAbout" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'about' }">
+            <a @click="goAbout" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'about' }">
                 About me
             </a>
-            <a @click="goProjects" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'projects' }">
+            <a @click="goProjects" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'projects' }">
                 My projects
             </a>
-            <a @click="goPhotos" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'photos' }">
+            <a @click="goPhotos" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'photos' }">
                 My photos
             </a>
-            <a @click="goLinks" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'links' }">
+            <a @click="goLinks" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'links' }">
                 Links
             </a>
         </nav>
@@ -83,7 +83,9 @@ export default {
         left: 0
         z-index: -1
         transition: 1s
-// .nav-item_active
-//     transform: skewY(-5deg) scale(1.05) !important
-//     text-decoration: underline
+.nav-item_active
+    transform: skewY(-5deg) scale(1.05) !important
+    text-decoration: underline
+    &::after
+      opacity: 0  
 </style>

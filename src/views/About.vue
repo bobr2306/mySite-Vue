@@ -13,8 +13,8 @@
         <div class="paralax-info"></div>
         <div class="about__info">
             <h5 class="about__title">About:</h5>
-            <h6 class="about__text">- купаюсь в создании сайтов с 2021</h6>
-            <h6 class="about__text">- фотографирую уже второй год</h6>
+            <h6 class="about__text">- хочу стать Junior Fullstack </h6>
+            <h6 class="about__text">- регулярно фотографирую</h6>
             <h6 class="about__text">- увлекаюсь велопутешествиями</h6>
         </div>
         <div class="paralax-info"></div>

@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Projects from "../views/Projects.vue"
 export default createRouter({
   history: createWebHistory(),
   routes: [
@@ -12,7 +11,7 @@ export default createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: Projects
+      component: () => import('../views/Projects.vue')
     },
     {
       path: '/photos',
