@@ -4,7 +4,7 @@
 
 <template>
     <div class="footer">
-        <img class="footer__logo" src="../assets/icons/smile.svg" alt="logo">
+        <img class="footer__logo" src="../assets/icons/ezz.png" alt="logo">
         <div class="footer__block">
             <ul class="footer__list">
                 <li class="footer__item">
@@ -43,8 +43,6 @@
             display: flex
             justify-content: center
             gap: 2rem
-        &__item
-
         &__link
             &:link, &:visited
                 text-decoration: none

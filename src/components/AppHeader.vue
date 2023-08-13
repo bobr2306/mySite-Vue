@@ -28,10 +28,18 @@ export default {
 <template>
     <header class="header">
         <div class="nav">
-            <a @click="goAbout" href="#" class="nav-item">About me</a>
-            <a @click="goProjects" href="#" class="nav-item">My projects</a>
-            <a @click="goPhotos" href="#" class="nav-item">My photos</a>
-            <a @click="goLinks" href="#" class="nav-item">Links</a>
+            <a @click="goAbout" href="#" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'about' }">
+                About me
+            </a>
+            <a @click="goProjects" href="#" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'projects' }">
+                My projects
+            </a>
+            <a @click="goPhotos" href="#" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'photos' }">
+                My photos
+            </a>
+            <a @click="goLinks" href="#" class="nav-item" :class="{ 'nav-item_active': this.$route.name = 'links' }">
+                Links
+            </a>
         </div>
         <h1 class="title-header">
             <span class="title-header__main">Konst</span>
@@ -59,6 +67,7 @@ header
     user-select: none
 .nav-item
     position: relative
+    display: inline-block
     &:link, &:visited
         text-decoration: none
         padding: 2rem 2rem
@@ -84,6 +93,9 @@ header
         left: 0
         z-index: -1
         transition: 1s
+    &_active
+        transform: skewY(-5deg) scale(1.05)
+        text-decoration: underline
 .title-header
     position: absolute
     top: 25%
