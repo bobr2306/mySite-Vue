@@ -12,7 +12,7 @@
     <section id="about" class="about">
         <div class="paralax-info"></div>
         <div class="about__info">
-            <h5 class="about__title">About:</h5>
+            <h5 class="title-second">About:</h5>
             <h6 class="about__text">- хочу стать Junior Fullstack </h6>
             <h6 class="about__text">- регулярно фотографирую</h6>
             <h6 class="about__text">- увлекаюсь велопутешествиями</h6>
@@ -22,7 +22,7 @@
     <section id="specs" class="specs">
         <div class="paralax-specs"></div>
         <div class="specs__info">
-            <h5 class="specs__title">Specs:</h5>
+            <h5 class="title-second">Specs:</h5>
             <div class="specs__block">
                 <img src="../assets/CPU.svg" alt="CPU" class="specs__img">
                 <p> Intel Core i3-10105F </p>
@@ -87,10 +87,6 @@
         transform: translate(-50%, -50%)
         padding: 3rem
         border: 1px solid gray
-    &__title
-        font-size: 2.5rem
-        font-weight: 500
-        letter-spacing: .5rem
     &__text
         font-size: 2rem
         font-weight: 400
@@ -103,7 +99,6 @@
     background-position: center
     background-repeat: no-repeat
     height: 50vh
-
 .specs
     position: relative
     &__info
@@ -115,10 +110,6 @@
         transform: translate(-50%, -50%)
         padding: 3rem
         border: 1px solid gray
-    &__title
-        font-size: 2.5rem
-        font-weight: 500
-        letter-spacing: .5rem
     &__text
         font-size: 2rem
         font-weight: 400
@@ -138,25 +129,5 @@
     background-size: cover
     height: 50vh
 
-@keyframes startDown
-    0%
-        opacity: 0
-        transform: translateY(-3rem)
-    100%
-        opacity: 1
-        transform: translateY(0)
-@keyframes leftToAss
-    0%
-        opacity: 0
-        transform: translateX(-10rem)
-    100%
-        opacity: 1
-        transform: translateY(0)
-@keyframes rightToAss
-    0%
-        opacity: 0
-        transform: translateX(10rem)
-    100%
-        opacity: 1
-        transform: translateY(0)
+
 </style>

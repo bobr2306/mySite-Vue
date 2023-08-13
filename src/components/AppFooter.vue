@@ -48,10 +48,10 @@
                 text-decoration: none
                 font-size: 1.6rem
                 color: black
-                display: inline-block
+                display: block
                 transition: .4s
+                font-weight: 500
             &:hover
-                transform: skewY(-5deg)
                 text-decoration: underline
                 font-weight: 700
                 
