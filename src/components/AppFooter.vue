@@ -4,7 +4,7 @@
 
 <template>
     <div class="footer">
-        <img class="footer__logo" src="../assets/icons/ezz.png" alt="logo">
+        <img class="footer__logo" src="../assets/icons/ezh.svg" alt="logo">
         <div class="footer__block">
             <ul class="footer__list">
                 <li class="footer__item">
@@ -42,7 +42,7 @@
             list-style: none
             display: flex
             justify-content: center
-            gap: 2rem
+            gap: 3rem
         &__link
             &:link, &:visited
                 text-decoration: none
@@ -53,6 +53,7 @@
             &:hover
                 transform: skewY(-5deg)
                 text-decoration: underline
+                font-weight: 700
                 
 
 </style>

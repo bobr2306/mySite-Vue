@@ -1,13 +1,13 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import {RouterView} from 'vue-router'
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import axios from 'axios';
 export default {
   components: {
     AppHeader,
-    AppFooter,
-    RouterView
+    RouterView,
+    AppFooter
   }
 }
 </script>

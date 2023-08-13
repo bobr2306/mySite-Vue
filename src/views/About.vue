@@ -3,6 +3,12 @@
 </script>
 
 <template>
+    <section class="header-block">
+        <h1 class="title-header">
+            <span class="title-header__main">Konst</span>
+            <span class="title-header__second">just stupid developer and photographer</span>
+        </h1>
+    </section>
     <section id="about" class="about">
         <div class="paralax-info"></div>
         <div class="about__info">
@@ -47,6 +53,29 @@
 </template>
 
 <style lang="sass">
+.header-block
+    background: url(../assets/header-bg.jpg) center / cover no-repeat
+    height: 100vh
+    width: 100vw
+    top: 0
+.title-header
+    position: absolute
+    top: 25%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    user-select: none
+    &__main
+        display: block
+        font-weight: 700
+        font-size: 4rem
+        letter-spacing: 1rem
+        animation: 1s ease-out .1s leftToAss
+    &__second
+        display: block
+        font-weight: 400
+        animation: 1s ease-out .1s rightToAss
+
 .about
     position: relative
     &__info
@@ -108,4 +137,26 @@
     background-repeat: no-repeat
     background-size: cover
     height: 50vh
+
+@keyframes startDown
+    0%
+        opacity: 0
+        transform: translateY(-3rem)
+    100%
+        opacity: 1
+        transform: translateY(0)
+@keyframes leftToAss
+    0%
+        opacity: 0
+        transform: translateX(-10rem)
+    100%
+        opacity: 1
+        transform: translateY(0)
+@keyframes rightToAss
+    0%
+        opacity: 0
+        transform: translateX(10rem)
+    100%
+        opacity: 1
+        transform: translateY(0)
 </style>
