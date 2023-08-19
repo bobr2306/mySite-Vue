@@ -63,6 +63,7 @@ export default {
     padding: 2rem 2rem
     text-transform: uppercase
     color: #000
+    cursor: pointer
     transition: .5s
     letter-spacing: .6rem
     &:hover

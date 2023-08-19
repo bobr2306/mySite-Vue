@@ -53,7 +53,7 @@ body
 .title-second
   font-size: 2.5rem
   font-weight: 500
-  letter-spacing: .5rem
+  letter-spacing: .4rem
   text-decoration: underline
 
 //utilites:
