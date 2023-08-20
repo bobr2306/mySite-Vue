@@ -1,5 +1,23 @@
 <script>
-
+export default {
+    methods: {
+        goAbout() {
+            this.$router.push({
+                name: 'about'
+            })
+        },
+        goProjects() {
+            this.$router.push({
+                name: 'projects'
+            })
+        },
+        goPhotos() {
+            this.$router.push({
+                name: 'photos'
+            })
+        }
+    }
+}
 </script>
 
 <template>
@@ -8,13 +26,13 @@
         <div class="footer__block">
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a href="#" class="footer__link">About</a>
+                    <a @click="goAbout" href="#" class="footer__link">About</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#"  class="footer__link">Projects</a>
+                    <a @click="goProjects" href="#"  class="footer__link">Projects</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#" class="footer__link">Photos</a>
+                    <a @click="goPhotos" href="#" class="footer__link">Photos</a>
                 </li>
                 <li class="footer__item">
                     <a href="https://github.com/bobr2306" class="footer__link">GitHub</a>
