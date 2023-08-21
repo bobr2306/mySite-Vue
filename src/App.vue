@@ -51,15 +51,15 @@ body
 
 //titles:
 .title-second
-  font-size: 2.5rem
+  font-size: 4rem
   font-weight: 500
   letter-spacing: .4rem
-  text-decoration: underline
 
 //utilites:
 .mb-2
   margin-bottom: 2rem
-
+.text-white
+  color: white
 //animations:
 @keyframes startDown
   0%
