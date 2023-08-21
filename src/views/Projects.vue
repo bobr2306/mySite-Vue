@@ -29,9 +29,8 @@
         <div class="soon__block">
             <div class="soon__info">
                 <h5 class="title-second mb-2">Coming soon...</h5>
-                <p class="soon__text">Now I am doind to-do-app...</p>
+                <p class="soon__text">Now I am doind to-do-app :)</p>
             </div>
-            <img src="../assets/icons/work.svg" alt="work" class="soon__img">
         </div>
     </section>
 </template>
@@ -72,15 +71,26 @@
             letter-spacing: .4rem
             text-decoration: underline
 .soon
-    background: #d9d9d9
+    background: url(../assets/coming-bg.jpg) center / cover no-repeat
     border-bottom: 1px solid gray
-    padding: 2rem
+    padding: 4rem
+    height: 100vh
+    position: relative
     &__img
         width: 30%
+        opacity: 0
     &__block
         display: flex
         justify-content: center
         gap: 4rem
         align-items: center
-
+        text-shadow: 0 0 20px black
+        background: rgba(#d9d9d9, 0.7)
+        padding: 3rem
+        border-radius: 1rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        align-items: center
 </style>

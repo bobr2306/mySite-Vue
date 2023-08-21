@@ -90,7 +90,7 @@
     &__text
         font-size: 2rem
         font-weight: 400
-        letter-spacing: .3rem
+        letter-spacing: .15rem
         text-transform: lowercase
 .paralax-info
     background-image: url(../assets/info-bg.jpg)
