@@ -45,6 +45,7 @@ export default {
 </template>
 
 <style lang="sass">
+
 .nav
     background-color: #d9d9d9
     list-style: none

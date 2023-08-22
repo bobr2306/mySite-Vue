@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader>
+  <AppHeader class="appheader">
 
   </AppHeader>
 
@@ -48,12 +48,15 @@ body
   font-size: 1.6rem
   font-weight: 400
   overflow-x: hidden
-
+.appheader
+  position: sticky
+  z-index: 222
+  top: 0
 //titles:
 .title-second
-  font-size: 4rem
+  font-size: 3.5rem
   font-weight: 500
-  letter-spacing: .4rem
+  letter-spacing: .3rem
 
 //utilites:
 .mb-2
