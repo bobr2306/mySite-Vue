@@ -2,12 +2,13 @@
 import { RouterView } from 'vue-router'
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
-import axios from 'axios';
+import SecondHeader from './components/SecondHeader.vue';
 export default {
   components: {
     AppHeader,
     RouterView,
-    AppFooter
+    AppFooter,
+    SecondHeader
   },
   methods: {
     scrollHeader() {
@@ -15,15 +16,29 @@ export default {
     }
   },
   mounted() {
-
+    window.addEventListener('scroll', (event) => this.ifScroll = window.scrollY > 50)
+  },
+  data() {
+    return {
+      ifScroll: false
+    }
   }
 }
 </script>
 
 <template>
-  <AppHeader class="appheader">
+  
+  <transition name="flip" mode="out-in">
 
-  </AppHeader>
+    <AppHeader class="appheader" v-if="!ifScroll" key="first">
+
+    </AppHeader>
+
+    <SecondHeader v-else key="second">
+
+    </SecondHeader>
+  </transition>
+
 
   <router-view>
 
@@ -49,7 +64,7 @@ body
   font-weight: 400
   overflow-x: hidden
 .appheader
-  position: sticky
+  // position: sticky
   z-index: 222
   top: 0
 //titles:

@@ -1,43 +1,21 @@
 <script>
-export default {
-    methods: {
-        goAbout() {
-            this.$router.push({
-                name: 'about'
-            })
-        },
-        goProjects() {
-            this.$router.push({
-                name: 'projects'
-            })
-        },
-        goPhotos() {
-            this.$router.push({
-                name: 'photos'
-            })
-        },
-        goLinks() {
-            this.$router.push({
-                name: 'links'
-            })
-        }
-    }
-}
+
 </script>
 
 <template>
-    <header class="header">
-        <nav class="nav">
-            <a @click="goAbout" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'about' }">
+    <header class="header-second">
+        <nav class="second-nav">
+            <a @click="goAbout" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'about' }">
                 About me
             </a>
-            <a @click="goProjects" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'projects' }">
+            <a @click="goProjects" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'projects' }">
                 My projects
             </a>
-            <a @click="goPhotos" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'photos' }">
+            <img src="../assets/icons/ezh.svg" class="second-nav__img" alt="">
+            <a @click="goPhotos" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'photos' }">
                 My photos
             </a>
-            <a @click="goLinks" class="nav-item" :class="{ 'nav-item_active': this.$route.name == 'links' }">
+            <a @click="goLinks" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'links' }">
                 Links
             </a>
         </nav>
@@ -45,14 +23,19 @@ export default {
 </template>
 
 <style lang="sass">
-
-.nav
+.header-second
+    position: sticky
+    z-index: 99
+    top: 0
+.second-nav
     background-color: #d9d9d9
     list-style: none
     display: flex
     justify-content: space-around
     user-select: none
-.nav-item
+    &__img
+        width: 10%
+.second-nav-item
     position: relative
     display: block
     text-decoration: none
