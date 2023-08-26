@@ -27,26 +27,30 @@ export default {
 </script>
 
 <template>
-  
-  <transition name="flip" mode="out-in">
+  <TransitionGroup name="header">
 
     <AppHeader class="appheader" v-if="!ifScroll" key="first">
 
     </AppHeader>
 
-    <SecondHeader v-else key="second">
+    <SecondHeader class="appheader" v-if="ifScroll" key="second">
 
     </SecondHeader>
-  </transition>
+
+  </TransitionGroup>
 
 
   <router-view>
 
   </router-view>
+  <!-- wtf??? -->
+  <Transition appear>
 
-  <AppFooter>
+    <AppFooter>
 
-  </AppFooter>
+    </AppFooter>
+
+  </Transition>
 </template>
 
 <style lang="sass">
@@ -67,6 +71,14 @@ body
   // position: sticky
   z-index: 222
   top: 0
+.v-enter-active,
+.v-leave-active 
+  transition: opacity 0.5s ease
+
+.v-enter-from,
+.v-leave-to 
+  opacity: 0
+
 //titles:
 .title-second
   font-size: 3.5rem

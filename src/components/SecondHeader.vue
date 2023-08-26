@@ -5,19 +5,20 @@
 <template>
     <header class="header-second">
         <nav class="second-nav">
-            <a @click="goAbout" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'about' }">
+            <!-- <a @click="goAbout" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'about' }">
                 About me
             </a>
             <a @click="goProjects" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'projects' }">
                 My projects
-            </a>
+            </a> -->
             <img src="../assets/icons/ezh.svg" class="second-nav__img" alt="">
-            <a @click="goPhotos" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'photos' }">
+            <!-- <a @click="goPhotos" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'photos' }">
                 My photos
             </a>
             <a @click="goLinks" class="second-nav-item" :class="{ 'nav-item_active': this.$route.name == 'links' }">
                 Links
-            </a>
+            </a> -->
+            
         </nav>
     </header>
 </template>
@@ -25,7 +26,6 @@
 <style lang="sass">
 .header-second
     position: sticky
-    z-index: 99
     top: 0
 .second-nav
     background-color: #d9d9d9
@@ -34,12 +34,12 @@
     justify-content: space-around
     user-select: none
     &__img
-        width: 10%
+        width: 7%
 .second-nav-item
     position: relative
     display: block
     text-decoration: none
-    padding: 2rem 2rem
+    padding: 0
     text-transform: uppercase
     color: #000
     cursor: pointer

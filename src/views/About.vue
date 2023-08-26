@@ -105,7 +105,7 @@
         background: rgba(white, .7)
         border-radius: 1rem
         position: absolute
-        top: 20%
+        top: 30%
         left: 50%
         transform: translate(-50%, -50%)
         padding: 3rem

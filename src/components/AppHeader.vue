@@ -63,10 +63,10 @@ export default {
     transition: .5s
     letter-spacing: .6rem
     animation-name: startDown
-    animation-duration: .6s
+    animation-duration: .5s
     animation-fill-mode: backwards
     animation-timing-function: ease-out
-    animation-delay: .4s
+    animation-delay: 0s
     &:hover
         transform: translateY(4px)
         &::after
